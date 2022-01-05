@@ -1,0 +1,9 @@
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\chat\chat_main.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\database\database.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\Application.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\security\Authentication.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\plugins\Serialization.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\plugins\Security.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\plugins\Sockets.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\plugins\Templating.kt
+F:\USERS\Polina\Рабочий стол\ktor_pr_server\src\main\kotlin\pr\plugins\Routing.kt
