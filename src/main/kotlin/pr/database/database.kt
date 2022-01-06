@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory
 import kotlinx.serialization.*
 
 @Serializable
-data class User(val _id : String, val username : String, var password : String, val email : String, val roles : HashSet<ERole>)
+data class User(val _id : String, var username : String, var password : String, var email : String, var roles : HashSet<ERole>, var activated : Boolean)
 
 enum class ERole {
     ADMIN,
