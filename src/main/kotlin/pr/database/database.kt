@@ -40,7 +40,6 @@ fun initDB() {
 }
 
 fun findByUsername(username: String): User? {
-    //return usersCollection.find(User::username eq username).toList()
     return usersCollection.findOne(User::username eq username)
 }
 

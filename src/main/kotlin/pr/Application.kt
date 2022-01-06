@@ -4,8 +4,9 @@ import io.ktor.application.*
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import pr.security.encrypt
-import pr.security.setKey
+import pr.chat.chat
+import pr.database.initDB
+import pr.security.*
 import java.nio.charset.Charset
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -23,12 +24,11 @@ fun main(args: Array<String>): Unit =
 @Suppress("unused")
 // application.conf references the main function. This annotation prevents the IDE from marking it as unused.
 fun Application.module() {
-/*    initCrypto()
+    initCrypto()
     initDB()
     auth()
     chat()
-    activate()*/
-    //updateConfig()
+    activate()
 }
 
 fun updateConfig() {
