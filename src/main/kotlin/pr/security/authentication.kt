@@ -6,11 +6,11 @@ import io.ktor.features.*
 import io.ktor.response.*
 import io.ktor.routing.*
 import io.ktor.serialization.*
+import kotlinx.serialization.json.Json
+import pr.database.User
 import pr.database.findByUsername
 import java.security.MessageDigest
 import kotlin.text.Charsets.UTF_8
-import kotlinx.serialization.json.Json
-import pr.database.User
 
 fun getMd5Digest(str: String): ByteArray = MessageDigest.getInstance("MD5").digest(str.toByteArray(UTF_8))
 
@@ -38,10 +38,10 @@ fun Application.auth() {
                 if (principal == null)
                     call.respondText("nope")
                 else {
-                    val user : User? = findByUsername(principal.name)
+                    val user: User? = findByUsername(principal.name)
                     if (user != null) {
-                    user.password = ""
-                    call.respond(user)
+                        user.password = ""
+                        call.respond(user)
                     }
                 }
             }
