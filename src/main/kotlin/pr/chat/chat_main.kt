@@ -7,7 +7,6 @@ import io.ktor.routing.*
 import io.ktor.websocket.*
 import java.util.*
 import java.util.concurrent.atomic.AtomicInteger
-import kotlin.collections.LinkedHashSet
 
 fun Application.chat() {
     install(WebSockets)
