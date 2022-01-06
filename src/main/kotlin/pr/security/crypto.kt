@@ -4,6 +4,7 @@ import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import pr.config
 import pr.pathConfig
+import pr.updateConfig
 import java.io.File
 import java.security.MessageDigest
 import java.util.*
@@ -45,6 +46,10 @@ fun decrypt(strToDecrypt: String?): String {
 
 fun initCrypto() {
     setKey()
+    if (!File(pathConfig).exists()) {
+        println("Config file does not exist, creating another one...")
+        updateConfig()
+    }
     val input = File(pathConfig).readText()
     config = Json.decodeFromString(input)
     config.email = decrypt(config.email)
